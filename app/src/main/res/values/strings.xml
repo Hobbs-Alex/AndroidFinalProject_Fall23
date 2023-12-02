@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FinalProjectMDP_AlexHobbs</string>
+    <string name="game_inventory">Game Inventory</string>
+    <string name="add_update">addUpdate</string>
+    <string name="add_new">add new</string>
+    <string name="info_text">Track your growing collection and update your wishlist with BoardGame Tracker!</string>
+</resources>

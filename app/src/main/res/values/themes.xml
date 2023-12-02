@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FinalProjectMDP_AlexHobbs" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#071847</item>
+        <item name="colorSecondary">#FFFDEC</item>
+    </style>
+
+    <style name="Theme.FinalProjectMDP_AlexHobbs" parent="Base.Theme.FinalProjectMDP_AlexHobbs" />
+</resources>
