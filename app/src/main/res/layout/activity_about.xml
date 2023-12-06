@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbarAccent"
+    android:orientation="vertical"
+    tools:context=".AboutActivity"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- toolbar -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbarBkg"
+            app:title="BoardGame Tracker"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:titleTextColor="@color/toolbarAccent" />
+
+        <TextView
+            android:id="@+id/textView_main"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:importantForAutofill="no"
+            android:padding="20dp"
+            android:text="@string/about_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#512A4C"
+            android:onClick="onHomeClicked"
+            android:text="@string/back_to_home" />
+
+    </LinearLayout>
+
+</LinearLayout>

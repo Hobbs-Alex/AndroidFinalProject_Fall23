@@ -3,5 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="toolbarBkg">#512A4C</color>
-    <color name="toolbarAccent">#DADAC1</color>
+    <color name="toolbarAccent">#E9E9DC</color>
 </resources>

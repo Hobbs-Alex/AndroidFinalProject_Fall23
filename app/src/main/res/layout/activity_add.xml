@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbarAccent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_add"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:background="@color/toolbarBkg"
+                android:textAlignment="viewEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="BoardGame Tracker"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+                app:titleTextColor="@color/toolbarAccent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/label_date"
+        android:layout_width="127dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="76dp"
+        android:width="100dp"
+        android:text="@string/purchase_date"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/label_category"
+        app:layout_constraintTop_toBottomOf="@+id/label_category" />
+
+    <EditText
+        android:id="@+id/textbox_date"
+        android:layout_width="134dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:padding="4dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/label_date"
+        app:layout_constraintTop_toTopOf="@+id/label_date" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/add_game_subheading"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:width="100dp"
+        android:text="@string/label_name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <EditText
+        android:id="@+id/textbox_name"
+        android:layout_width="222dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="2dp"
+        android:inputType="text"
+        android:padding="4dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toEndOf="@+id/label_name"
+        app:layout_constraintTop_toTopOf="@+id/label_name" />
+
+    <TextView
+        android:id="@+id/label_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="320dp"
+        android:width="100dp"
+        android:text="@string/publisher"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/label_name"
+        app:layout_constraintTop_toBottomOf="@+id/label_name" />
+
+    <EditText
+        android:id="@+id/textbox_publisher"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:inputType="text"
+        android:padding="4dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textbox_name"
+        app:layout_constraintTop_toTopOf="@+id/label_publisher" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#512A4C"
+        android:onClick="onClear"
+        android:text="@string/clear"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toEndOf="@+id/btn_add"
+        app:layout_constraintTop_toTopOf="@+id/btn_add" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#512A4C"
+        android:onClick="onAdd"
+        android:text="@string/add"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_date" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="197dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/label_category"
+        app:layout_constraintTop_toTopOf="@+id/label_category">
+
+        <RadioButton
+            android:id="@+id/radioButton_category_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCategory"
+            android:text="@string/collection"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_category_wishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onWishlist"
+            android:text="@string/wishlist"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/label_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:width="100dp"
+        android:text="@string/category"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/label_publisher"
+        app:layout_constraintTop_toBottomOf="@+id/label_publisher" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_drawer"
+            android:checked="false"
+            android:icon="@drawable/icon_add_nav"
+            android:title="@string/add_game_to_a_list"
+            android:onClick="onAddClicked"/>
+        <item
+            android:id="@+id/about_drawer"
+            android:checked="false"
+            android:icon="@drawable/icon_about_nav"
+            android:title="@string/about"
+            android:onClick="onAboutClicked"/>
+    </group>
+</menu>

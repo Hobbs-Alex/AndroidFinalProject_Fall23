@@ -4,4 +4,23 @@
     <string name="add_update">addUpdate</string>
     <string name="add_new">add new</string>
     <string name="info_text">Track your growing collection and update your wishlist with BoardGame Tracker!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_wishlist">View Wishlist</string>
+    <string name="label_name">Name</string>
+    <string name="category">Category</string>
+    <string name="add_game_subheading">Add a game to a list</string>
+    <string name="publisher">Publisher</string>
+    <string name="collection">Collection</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="purchase_date">Purchase Year</string>
+    <string name="clear">Clear</string>
+    <string name="add">Add</string>
+    <string name="home">Home</string>
+    <string name="add_game_to_a_list">Add game to a list</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="about">About</string>
+    <string name="closeDrawer">Navigation View Closed</string>
+    <string name="openDrawer">Navigation View Opened</string>
+    <string name="about_text">The BoardGame Tracker app was created by Alex Hobbs in Fall 2023 for the Mobile Device Programming course at Gateway Technical College.</string>
 </resources>

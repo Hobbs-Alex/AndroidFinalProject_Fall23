@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <item
-        android:title="@string/add_update"
-        android:id="@+id/action_add_update"
-        android:icon="@drawable/baseline_add_circle_24"
+    <item android:id="@+id/action_home"
+        android:title="@string/home"
+        android:icon="@drawable/baseline_home_24"
+        android:onClick="onHome"
         app:showAsAction="ifRoom"
         />
-
 </menu>
